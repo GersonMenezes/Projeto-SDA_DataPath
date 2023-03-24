@@ -1,0 +1,136 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+-- Array de Array? "type matriz: array(7 DOWNTO 0) of std_logic_vector (7 DOWNTO);
+-- signal bus: matriz;
+-- Como fazer arquivo de componets
+-- Manter registradores com seus valores. Com process
+-- Variavel generic pode modificar nome?
+-- Como ligar saida_ula2 com data_out do DataPath e signal?
+-- Deslocamento
+
+entity DataPath is
+	port(
+		data_in : in std_logic_vector(7 downto 0);
+		clock : in std_logic;
+		reset : in std_logic;
+		control : in std_logic_vector(28 downto 0);
+		data_out : out std_logic_vector(7 downto 0);
+		cout,ov,N,Z : out std_logic);
+end DataPath;
+
+ARCHITECTURE arq of DataPath is
+	
+	-- type matriz: array(7 DOWNTO 0) of std_logic_vector (7 DOWNTO 0);
+   -- signal bus: matriz;
+	signal c_regis: std_logic_vector (2 DOWNTO 0);
+	signal a_regis: std_logic_vector(7 downto 0);
+	signal saida_ula1: std_logic_vector(7 downto 0);
+	signal saida_ula2: std_logic_vector(7 downto 0);
+	signal saida_mux1: std_logic_vector(7 downto 0);
+	signal saida_mux2: std_logic_vector(7 downto 0);
+	signal saida_mux3: std_logic_vector(7 downto 0);
+	signal saida_mux4: std_logic_vector(7 downto 0);
+	signal saida_mux5: std_logic_vector(7 downto 0);
+	signal saida_mux6: std_logic_vector(7 downto 0);
+	signal saida_mux7: std_logic_vector(7 downto 0);
+	signal saida_mux8: std_logic_vector(7 downto 0);
+	signal saida_mux_oito_1: std_logic_vector(7 downto 0);
+	signal saida_mux_oito_2: std_logic_vector(7 downto 0);
+	signal saida_mux_oito_3: std_logic_vector(7 downto 0);
+	signal saida_regis1: std_logic_vector(7 downto 0);
+	signal saida_regis2: std_logic_vector(7 downto 0);
+	signal saida_regis3: std_logic_vector(7 downto 0);
+	signal saida_regis4: std_logic_vector(7 downto 0);
+	signal saida_regis5: std_logic_vector(7 downto 0);
+	signal saida_regis6: std_logic_vector(7 downto 0);
+	signal saida_regis7: std_logic_vector(7 downto 0);
+	signal saida_regis8: std_logic_vector(7 downto 0);
+	signal control_aux_3bits: std_logic_vector(2 downto 0);
+	signal control_aux_2bits: std_logic_vector(1 downto 0);
+
+	COMPONENT registrador
+		port(
+			a: in std_logic_vector(7 downto 0);
+			control: in std_logic;
+			reset, clock: in std_logic;
+			saida: out std_logic_vector(7 downto 0)
+			);
+	END COMPONENT;
+	
+	COMPONENT ula1
+		port(
+			a, b: in std_logic_vector(7 downto 0);
+			control: in std_logic_vector (1 DOWNTO 0);
+			ov, cout: out std_logic;
+			saida: out std_logic_vector(7 downto 0)
+			);
+	END COMPONENT;
+	
+	COMPONENT ula2
+		port(
+			c, d: in std_logic_vector(7 downto 0);
+			control: in std_logic_vector (1 DOWNTO 0);
+			N, Z: out std_logic;
+			saida: out std_logic_vector(7 downto 0)
+			);
+	END COMPONENT;
+	
+	COMPONENT mux_2_1
+		port(
+			a, b: in std_logic_vector (7 downto 0);
+			sel: in std_logic;
+			saida: out std_logic_vector (7 downto 0)
+			);
+	END COMPONENT;
+	
+	COMPONENT mux_8_1
+			port(
+			a, b, c, d, e, f, g, h: in std_logic_vector (7 downto 0);
+			sel: in std_logic_vector (2 downto 0);
+			s: out std_logic_vector (7 downto 0)
+			);
+	END COMPONENT;
+	
+	BEGIN
+
+		mux1: mux_2_1 PORT MAP(data_in, saida_ula2, control(0), saida_mux1);
+		mux2: mux_2_1 PORT MAP(data_in, saida_ula2, control(1), saida_mux2);
+		mux3: mux_2_1 PORT MAP(data_in, saida_ula2, control(2), saida_mux3);
+		mux4: mux_2_1 PORT MAP(data_in, saida_ula2, control(3), saida_mux4);
+		mux5: mux_2_1 PORT MAP(data_in, saida_ula2, control(4), saida_mux5);
+		mux6: mux_2_1 PORT MAP(data_in, saida_ula2, control(5), saida_mux6);
+		mux7: mux_2_1 PORT MAP(data_in, saida_ula2, control(6), saida_mux7);
+		mux8: mux_2_1 PORT MAP(data_in, saida_ula2, control(7), saida_mux8);
+		R1: registrador PORT MAP(saida_mux1, control(8), reset, clock,  saida_regis1);
+		R2: registrador PORT MAP(saida_mux2, control(9), reset, clock, saida_regis2);
+		R3: registrador PORT MAP(saida_mux3, control(10), reset, clock, saida_regis3);
+		R4: registrador PORT MAP(saida_mux4, control(11), reset, clock, saida_regis4);
+		R5: registrador PORT MAP(saida_mux5, control(12), reset, clock, saida_regis5);
+		R6: registrador PORT MAP(saida_mux6, control(13), reset, clock, saida_regis6);
+		R7: registrador PORT MAP(saida_mux7, control(14), reset, clock, saida_regis7);
+		R8: registrador PORT MAP(saida_mux8, control(15), reset, clock, saida_regis8);
+		mux_oito_1: mux_8_1 PORT MAP(saida_regis1, saida_regis2, saida_regis3, 
+												saida_regis4, saida_regis5, saida_regis6, 
+												saida_regis7, saida_regis8, control(18 DOWNTO 16), saida_mux_oito_1);
+		mux_oito_2: mux_8_1 PORT MAP(saida_regis1, saida_regis2, saida_regis3, 
+												saida_regis4, saida_regis5, saida_regis6, 
+												saida_regis7, saida_regis8, control(21 DOWNTO 19), saida_mux_oito_2);
+		mux_oito_3: mux_8_1 PORT MAP(saida_regis1, saida_regis2, saida_regis3, 
+												saida_regis4, saida_regis5, saida_regis6, 
+												saida_regis7, saida_regis8, control(24 DOWNTO 22), saida_mux_oito_3);
+		ula2_port: ula2 PORT MAP(c => saida_mux_oito_1, 
+										d => saida_ula1,
+										control => control(28 DOWNTO 27), 
+										N => N, 
+										Z => Z, 
+										saida => saida_ula2);
+		ula1_port: ula1 PORT MAP(a => saida_mux_oito_2, 
+										b => saida_mux_oito_3,
+										control => control(26 DOWNTO 25), 
+										ov => ov, 
+										cout => cout, 
+										saida => saida_ula1);
+		data_out <= saida_mux_oito_3;
+		
+END arq;

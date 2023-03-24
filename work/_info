@@ -1,0 +1,309 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Edatapath
+Z0 w1679497356
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Gerson Menezes\Documents\Projeto DataPath
+Z4 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath.vhd
+Z5 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath.vhd
+l0
+L12
+V]UR81FooeSjIOmI<zAT[z3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1679623214.786000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath.vhd|
+Z9 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 >KUC6J<`8Pe7cZk_SMKk@3
+!i10b 1
+Aarq
+R1
+R2
+DEx4 work 8 datapath 0 22 ]UR81FooeSjIOmI<zAT[z3
+l95
+L22
+VaUdFG[_4=^Sh7=>6QhHT^2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 `HUkk=RP6_Z5Fb`eF5eNi1
+!i10b 1
+Edatapath_n_tb
+Z12 w1679618256
+R1
+R2
+R3
+Z13 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath_n_TB.vhd
+Z14 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath_n_TB.vhd
+l0
+L5
+VeN1jbkUJ;na1=o>UAALo42
+R6
+32
+Z15 !s108 1679623214.664000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath_n_TB.vhd|
+Z17 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath_n_TB.vhd|
+R10
+R11
+!s100 `eUMc2bWDCaYhd=9]W:A90
+!i10b 1
+Aarch_teste
+R1
+R2
+DEx4 work 13 datapath_n_tb 0 22 eN1jbkUJ;na1=o>UAALo42
+l59
+L9
+VX::Tb8@QbdO^5L2ANYdm:1
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 klZ<_JWn?<gCZ6hERj>l20
+!i10b 1
+Artl
+Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z19 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R1
+R2
+DEx4 work 13 datapath_n_tb 0 22 GA_j=5:<XC7c2Le06njg<0
+l65
+L10
+Vg_0c4OgO6Zc?f>mTecf?A3
+R6
+32
+R16
+R17
+R10
+R11
+w1679616669
+!s108 1679616677.197000
+!s100 hd4A[7ihAG2aGi]Y73i<G1
+!i10b 1
+Efa
+Z21 w1678189448
+R1
+R2
+R3
+Z22 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\FA.vhd
+Z23 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\FA.vhd
+l0
+L4
+VOPbm:K>YXf06eenEmRSb;3
+!s100 IW4GTE6_^fj<ZQck3NdIl1
+R6
+32
+!i10b 1
+Z24 !s108 1679623215.709000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\FA.vhd|
+Z26 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\FA.vhd|
+R10
+R11
+Aarq
+R1
+R2
+Z27 DEx4 work 2 fa 0 22 OPbm:K>YXf06eenEmRSb;3
+l12
+L10
+Z28 VogO_H`:3QZz8bfVIfLG6=3
+Z29 !s100 9PYZUmL_:ZWMk`8_Ml:;k3
+R6
+32
+!i10b 1
+R24
+R25
+R26
+R10
+R11
+Emux_2_1
+Z30 w1678106634
+R1
+R2
+R3
+Z31 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_2_1.vhd
+Z32 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_2_1.vhd
+l0
+L4
+VmgeTYzQO:<O0U?[z]]0]50
+R6
+32
+Z33 !s108 1679623215.199000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_2_1.vhd|
+Z35 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_2_1.vhd|
+R10
+R11
+!s100 bYBho3gSbN4E>JkYSSTC23
+!i10b 1
+Aarq
+R1
+R2
+DEx4 work 7 mux_2_1 0 22 mgeTYzQO:<O0U?[z]]0]50
+l14
+L12
+Vjd]8;B@F=RSUB9eJH;AmC1
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 bJC`h[_m@YAbm=5;=en0H2
+!i10b 1
+Emux_8_1
+Z36 w1678106680
+R1
+R2
+R3
+Z37 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_8_1.vhd
+Z38 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_8_1.vhd
+l0
+L4
+V:9F1`i2;jREd4BI`LbOD02
+R6
+32
+Z39 !s108 1679623214.887000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_8_1.vhd|
+Z41 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_8_1.vhd|
+R10
+R11
+!s100 02V;lS=`jV4VThdj@[X[P1
+!i10b 1
+Aarq
+R1
+R2
+DEx4 work 7 mux_8_1 0 22 :9F1`i2;jREd4BI`LbOD02
+l14
+L12
+VWoAP[mXX1][=IEHTXB8eM0
+R6
+32
+R39
+R40
+R41
+R10
+R11
+!s100 DkQ57WFWM2P61UhGh^:Cn2
+!i10b 1
+Eregistrador
+Z42 w1678133610
+R1
+R2
+R3
+Z43 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\registrador.vhd
+Z44 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\registrador.vhd
+l0
+L4
+VMPXPJ42m]g;S`e:A@?IeA0
+R6
+32
+Z45 !s108 1679623215.592000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\registrador.vhd|
+Z47 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\registrador.vhd|
+R10
+R11
+!s100 eF9Vmk`Tc<TM_S?hMm=al3
+!i10b 1
+Aarq
+R1
+R2
+DEx4 work 11 registrador 0 22 MPXPJ42m]g;S`e:A@?IeA0
+l15
+L13
+V^]]`GC1^YMF3dchN9?jT[0
+!s100 3DB[2?N6MVUOlnf>MG:<A3
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!i10b 1
+Eula1
+Z48 w1678726068
+R19
+R1
+R2
+R20
+R3
+Z49 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula1.vhd
+Z50 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\ula1.vhd
+l0
+L5
+VXRRQ_V4<KOXT2WE[:Zg=K3
+R6
+32
+Z51 !s108 1679623215.348000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula1.vhd|
+Z53 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula1.vhd|
+R10
+R11
+!s100 Q[WD`<5R53l;zG8Y32bGT1
+!i10b 1
+Aarq
+R19
+R1
+R2
+R20
+DEx4 work 4 ula1 0 22 XRRQ_V4<KOXT2WE[:Zg=K3
+l24
+L15
+VI:hm`U5F>3YPB2163>C5?0
+R6
+32
+R51
+R52
+R53
+R10
+R11
+!s100 =hXS`4:L2EJ6NIRjmd<;c1
+!i10b 1
+Eula2
+Z54 w1678726110
+R1
+R2
+R3
+Z55 8C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula2.vhd
+Z56 FC:\Users\Gerson Menezes\Documents\Projeto DataPath\ula2.vhd
+l0
+L4
+VPnS0b2lX4;<j@4NbNmgoY1
+R6
+32
+Z57 !s108 1679623215.458000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula2.vhd|
+Z59 !s107 C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula2.vhd|
+R10
+R11
+!s100 ;7R?bGJbB>Yej7Oj?J5lK2
+!i10b 1
+Aarq
+R1
+R2
+DEx4 work 4 ula2 0 22 PnS0b2lX4;<j@4NbNmgoY1
+l17
+L13
+VkI>B2TR9d1`j8@LD[;VNL1
+R6
+32
+R57
+R58
+R59
+R10
+R11
+!s100 d]bPiW^4[ghB:k7VmoUD;3
+!i10b 1

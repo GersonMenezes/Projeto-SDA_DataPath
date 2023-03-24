@@ -1,0 +1,18 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity registrador is
+	port(
+		a: in std_logic_vector(7 downto 0);
+		control: in std_logic;
+		saida: out std_logic_vector(7 downto 0)
+		);
+	end registrador;
+	
+ARCHITECTURE arq of registrador is
+	begin
+	
+		WITH control SELECT
+		saida <= a WHEN '1',
+					a WHEN '0'; -- Arrumar
+END arq;

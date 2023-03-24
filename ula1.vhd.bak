@@ -1,0 +1,24 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity ula1 is
+	port(
+		a, b: in std_logic_vector(7 downto 0);
+		control: in std_logic_vector (1 DOWNTO 0);
+		ov, cout: out std_logic;
+		saida: out std_logic_vector(7 downto 0)
+		);
+	end ula1;
+
+ARCHITECTURE arq of ula1 is
+	
+	begin
+	
+	
+		with control SELECT
+		saida <= a WHEN "00",
+					a OR b WHEN "01",
+					a XOR b WHEN "10",
+					a XOR (NOT b) WHEN "11";
+END arq;
+			

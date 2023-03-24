@@ -1,0 +1,11 @@
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath_n_TB.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\DataPath.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_8_1.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\mux_2_1.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula1.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\ula2.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\registrador.vhd}
+vcom -work work -2002 -explicit {C:\Users\Gerson Menezes\Documents\Projeto DataPath\FA.vhd}
+vsim -gui work.datapath_n_tb
+do wave.do
+run 1 us
